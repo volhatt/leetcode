@@ -2,9 +2,11 @@
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 """
 
+# import List from typing to support hinting in function definition 
+from typing import List
+
 class Solution:
-    #def two_sum(self, nums: List[int], target: int) -> List[int]:
-    def two_sum(nums, target):
+    def two_sum(nums: List[int], target: int) -> List[int]:
         for i in range(len(nums)):
             for j in range(i+1, len(nums)):
                 if nums[i] + nums[j] == target:
