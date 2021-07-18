@@ -9,7 +9,8 @@ from typing import List
 
 
 class Solution:
-    def runningSum(nums: List[int]) -> List[int]:
+    nums = [1,2,3,4]
+    def runningSum(self, nums: List[int]) -> List[int]:
         run_sum = 0
         sum = []
         for i in range(len(nums)):
@@ -18,8 +19,8 @@ class Solution:
         return sum
         
 
-    # test
-    nums = [1,2,3,4]
+        #    test
+        #nums = [1,2,3,4]
    
-    print(runningSum(nums))
-    # expected output [1,3,6,10]
+        print(runningSum(self, nums))
+        # expected output [1,3,6,10]
